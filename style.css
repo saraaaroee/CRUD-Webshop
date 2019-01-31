@@ -1,0 +1,603 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+h1 {
+	font-size: 6em;
+	text-transform: uppercase;
+	letter-spacing: 30px;
+	text-align: center;
+	margin-top: 35vh;
+	color: antiquewhite;
+}
+
+h2 {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 1.5em;
+    /*margin-top: 5vh;*/
+    margin: 20px 0px 20px 0px;
+}
+
+h3 {
+	font-size: 1em;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	color: #6666ff;
+}
+
+h4 {
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 0.8em;
+}
+
+p {
+	font-size: 1em;
+	font-weight: 100; 
+}
+
+body{
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+	font-size: 16px;
+	font-family: arial; 
+	font-weight: 100;
+	
+}
+
+nav {
+	height: 10vh; 
+	width: 100vw;
+	display: none;
+	align-items: center; 
+	vertical-align: right;
+}
+
+input{
+	width: 100%;
+	height: 30px;
+	padding: 0px 10px;
+	border: none;
+	border-bottom: 1px solid black;
+}
+
+#frmUser input:last-of-type {
+	border-bottom: none;
+	margin-top: 3vh;
+}
+
+form p {
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	margin-top: 4vh;
+	font-size: 0.8em;
+}
+
+nav button{
+	padding: 0 20px;
+	border: none;
+	outline: none;
+	color: #454545;
+	background-color: white;
+	cursor: pointer;
+	text-transform: uppercase;
+	font-weight: 700;
+	letter-spacing: 2px;
+	margin-top: 0px;
+}
+
+nav button:hover { 
+    color: hotpink;
+}
+
+button {
+	padding: 8px 40px;
+	border: none;
+	outline: none;
+	color: white;
+	border-radius: 15px;
+	background-color: #6666ff;
+	cursor: pointer;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	align-items: center;
+	justify-content: center;
+
+}
+
+.smallbutton {
+	margin: 5px 5px 5px 5px;
+	background-color: #ededed;
+	color: #353535;
+	padding: 6px 20px;
+	font-size: 0.5em;
+}
+
+.smallbutton:hover {
+	background-color: #6666ff;
+	color: white;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+/*PAGE WELCOME*/
+
+#pageWelcome {
+	background-color: orange;
+	display: flex;
+	width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    /*z-index: 1;*/
+}
+
+.page .show {
+	display: flex;
+}
+
+.show {
+	display: flex;
+}
+
+.hide {
+	display: none;
+}
+
+
+
+/*PAGE SIGNUP*/
+
+#pageSignUp {
+	background-color: white;
+	/*display: flex;*/
+	width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    margin-top: 5vh;
+}
+
+#boxSignUpForm {
+	width: 35%;
+	margin-top: 0px;
+	justify-content: flex-start;
+}
+
+#boxSignUpMessage {
+	width: 35%;
+	margin-top: 0px;
+	align-items: center; 
+	justify-content: center;
+}
+
+.message {
+	color: #454545;
+	text-align: center;
+	font-size: 2em;
+	margin-top: 30vh;
+}
+.subMessage {
+	color: #454545;
+	text-align: center;
+	font-size: 1em;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+#btnSaveUser {
+	margin-left: 30%;
+}
+
+/*PAGE LOGIN*/
+
+#pageLogIn {
+	background-color: white;
+	/*display: flex-start;*/
+	width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    margin-top: 10vh;
+}
+
+#boxLogInForm {
+	align-items: flex-start;
+	width: 35%;
+}
+
+#btnUserLogIn {
+	margin-top: 6vh;
+	margin-left: 35%;	
+}
+
+/*nav #btnLogOut {
+	display: none;
+}*/
+
+#boxLogInMessage p{
+	margin-top: 8vh;
+	height: 10vh;
+	color: red;
+}
+
+/* USER PROFILE */
+
+#pageUserProfile {
+	background-color: white;
+	align-items: flex-start;
+	width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+
+
+#boxUserProfile {
+	width: 70vh;
+	align-items: center;
+}
+
+#boxUserProfileHere {
+	width: 70vh;
+	height: 50vh; 
+	display: flex;
+	justify-content: center; 
+	align-items: center;
+
+}
+
+#boxUserProfileHere img{
+	width: 250px;
+	height: 250px;
+}
+
+#boxProfileText {
+	margin-left: 50px;
+}
+
+
+#boxEditProfile {
+	width: 40vw; 
+	height: 100vh;
+	justify-content: center; 
+	align-items: center;
+}
+
+/* USERS */
+
+#pageUsers {
+	background-color: white;
+	/*display: flex;*/
+	width: 100vw;
+	height: 90vh;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    flex-direction:row;
+}
+
+#boxUserList {
+	flex-direction:row;
+	width: 100%;
+	justify-content: center;
+
+}
+
+#boxUsers{
+	align-items: center;
+	width: 100%;
+	height: 300px;
+	overflow-x: hidden;
+    overflow-y: scroll;
+    /*margin-bottom: 300px;*/
+}
+
+#boxEditUser{
+	margin-top: 50px;
+	align-items: center;
+	width: 40%;
+	height: 300px;
+	margin-left: 30%;
+	overflow-x: hidden;
+    overflow-y: scroll;
+    margin-bottom: 200px;
+}
+
+
+
+#boxUserContainer{
+	width: 100%
+	margin-top 5%;
+}
+
+.boxSingleUser {
+	width: 40%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 30%;
+}
+
+#btnDeleteUser {
+	background-color: #ededed;
+	color: #353535;
+	padding: 6px 20px;
+	font-size: 0.5em;
+}
+
+#userBtns {
+	width: 45%; 
+	justify-content: flex-end; 
+}
+
+/* WEBSHOP */
+
+#pageProducts {
+	background-color: white;
+	/*display: flex;*/
+	width: 100vw;
+	height: 90vh;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+#boxWebshopContainer {
+	display: grid;
+  	grid-template-columns: 33% 33% 33%;
+  	grid-gap: 10px;
+}
+
+.boxSingleProduct{
+  	padding: 20px;
+  	text-align: center;
+}
+
+.boxSingleProduct img{
+	width: 250px;
+	height: 250px;
+}
+
+.boxSingleProduct h4{
+	margin-top: 20px;
+}
+
+.boxSingleProduct:last-child {
+    margin-bottom: 10vh;
+}
+
+/********************************* CART ****************************************/
+
+#pageCart {
+	background-color: white;
+	align-items: flex-start;
+	width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+#boxCart{
+	align-items: center;
+	justify-content: center;
+	width: 100%
+}
+
+#boxCartBtns {
+	display: flex;
+	justify-content: space-around;
+	align-items: flex-start;
+	width: 40%;
+	margin-left: 30%;
+}
+
+#boxCartContainer{
+	width: 100%
+	margin-top 5%;
+}
+
+.boxAddedProduct {
+	width: 40%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 30%;
+}
+
+
+
+/* ADD PRODUCT PAGE */
+
+#pageAddProducts {
+	background-color: white;
+	/*display: flex;*/
+	width: 100vw;
+    height: 100vh;
+}
+
+#pageAddProducts h2{
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	font-size: 1.5em;
+	margin-top: 5vh;
+}
+
+#boxAddProduct {
+	align-items: center;
+	width: 80%;
+	margin-left: 10%;
+	justify-content: center;
+}
+
+#btnSaveProduct {
+	margin-top: 6vh;
+	margin-left: 30%;
+}
+
+#btnShowAllProducts {
+	margin: 5vh auto;
+	display: inline-flex;
+}
+
+#btnGetProduct {
+	background-color: #ededed;
+	color: #353535;
+	padding: 6px 20px;
+	font-size: 0.5em;
+}
+
+#frmAddProduct input:last-of-type {
+	border-bottom: none;
+	margin-top: 3vh;
+}
+
+.left-side, .right-side {
+      padding: 0 10px;
+ }
+
+.left-side {
+	/*border-width: 0 1px 0 0;
+	border-color: #ccc;
+    border-style: solid;*/
+    width: 50%;
+}
+
+.space {
+	margin-bottom: 5vh;
+
+}
+
+
+.right-side {
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.show-all-products,
+.show-single-product {
+      height: 40vh;
+      overflow-x: hidden;
+      overflow-y: scroll;
+}
+
+.show-single-product {
+    /*border: 1px #ccc solid;
+    border-width: 1px 0 0 0;*/
+    margin: 0 -10px;
+    padding: 0 20px 40px 10px;
+}
+    
+
+.product {
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 8px 0;
+}
+
+.product .name {
+    font-weight: 100;
+    font-size: 1em;
+    margin-left: 10px;
+}
+
+.show-single-product img {
+	width: 25%;
+    width: 200px;
+    height: 200px;
+    float: left;
+    padding: 0 10px;
+    /*border-radius: 3px;*/
+
+}
+
+/*#boxProductDetails {
+	width: 100%
+	height:100vh;
+
+}*/
+
+.productInfo {
+	width: 100%;
+	height: 100vh;
+    float: right;
+    text-align: left;
+    
+}
+
+#boxEditProduct {
+	width: 100%;
+	height: 50vh;
+	margin-top: 35vh;
+}
+
+#frmNewInfo input {
+	width: 70%;
+}
+
+#frmNewProductInfo input {
+	width: 70%;
+}
+
+
+
+#productBtns {
+	width: 35%; 
+	justify-content: flex-end; 
+}
+
+#btnUpdateInfo {
+	margin-top: 25px;
+}
+
+
+/* CONTACT */
+
+#pageContact {
+	background-color: white;
+	/*display: flex-start;*/
+	width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    margin-top: 10vh;
+    text-align: center;
+}
+
+#boxContactContent {
+	align-items: flex-start;
+	justify-content: center;
+	width: 50%;
+}
+
+#map {
+	margin: 10px 10px 10px 10px;
+	width: 100%;
+	height: 250px;
+	background-color: lightblue;
+}
+
+#boxContactContent input{
+	width: 50%;
+}
+
+#btnSubscribe {
+	margin-top: 3vh;
+}
+
+
+
+
+
+
